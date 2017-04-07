@@ -15,7 +15,7 @@ helpers do
   end
 
   def paint_images(images)
-    images.map { |image| "<a href='#{image}'><img src='#{image}' height='75' hspace='5' vspace='5' style='border: 1px solid #ddd;'/></a>" }.join
+    images.map { |image| "<img src='#{image}'/>" }.join
   end
 
   def links_to_li(links)
