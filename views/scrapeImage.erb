@@ -1,1 +1,2 @@
-<%= @page.images.to_json %>
+<% if @page.images.any? %><%= @page.images.with_size.to_json %><% end %>
+
