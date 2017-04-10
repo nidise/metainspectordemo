@@ -1,0 +1,5 @@
+<% if @page.images.any? %>
+  <% if @page.images.best %>
+    <%= paint_images [@page.images.best] %>
+  <% end %>
+<% end %>
