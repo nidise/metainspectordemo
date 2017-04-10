@@ -1,1 +1,7 @@
-{"res":"success","data":"<% if @page.images.owner_suggested %><%= paint_images [@page.images.owner_suggested] %><% end %>"}
+<% if @page.images.owner_suggested %>
+  {"res":"success","data":"<%= paint_images [@page.images.owner_suggested] %>"}
+<% else %>
+  {"res":"error","data":"error"}
+<% end %>
+
+
