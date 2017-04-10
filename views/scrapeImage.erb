@@ -1,7 +1,7 @@
 <% if @page.images.any? %>
       <% if @page.images.owner_suggested %>
         {"og_image" : " <%= paint_images [@page.images.owner_suggested] %>"}
-      <% elseif %>
+      <% elsif %>
            <% @page.images.with_size.each do |image| %>
                {"image_url":"<%= image[0] %>","width":"<%= image[1] %>","height":"<%= image[2] %>"},
            <% end %>
