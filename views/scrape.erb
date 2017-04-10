@@ -1,1 +1,1 @@
-{"res":"success","data":"<% if @page.images.any? %><% if @page.images.best %><%= paint_images [@page.images.best] %><% end %><% end %>"}
+{"res":"success","data":"<% if @page.images.owner_suggested? %><%= paint_images [@page.images.owner_suggested] %><% end %>"}
