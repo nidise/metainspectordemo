@@ -3,6 +3,6 @@
      <% if @page.images.owner_suggested %>
         "og_image" : " <%= paint_images [@page.images.owner_suggested] %>",
       <% end %>
-      <%= paint_images_sizes @page.images.with_size %>
+      <%= @page.images.with_size.inspect %>
 <% end %>
 }
