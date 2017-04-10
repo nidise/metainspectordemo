@@ -1,3 +1,9 @@
-<% if @page.images.any? %>
-    <%= @page.images.with_size.to_json %>
+<% if @page.images.owner_suggested %>
+    {"og_image" : " <%= paint_images [@page.images.owner_suggested] %>"}
+<% else %>
+
+    <% if @page.images.any? %>
+        <%= @page.images.with_size.to_json %>
+    <% end %>
+
 <% end %>
