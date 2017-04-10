@@ -1,5 +1,5 @@
 <% if @page.meta['og:image'] %>
-  {"res":"success","data": ["<%= @page.meta['og:image:']  %>","<%= @page.meta['og:image:width']  %>","<%= @page.meta['og:image:height']  %>"] }
+  {"res":"success","data": ["<%= @page.meta['og:image']  %>","<%= @page.meta['og:image:width']  %>","<%= @page.meta['og:image:height']  %>"] }
 <% else %>
   {"res":"error","data":"error"}
 <% end %>
