@@ -3,7 +3,7 @@
      <% if @page.images.owner_suggested %>
         "og_image" : " <%= paint_images [@page.images.owner_suggested] %>",
       <% end %>
-      <%= @page.images.with_size do |image| %>
+      <%= @page.images.with_size.each do |image| %>
           <% image[0] %>
       <% end %>
 <% end %>
