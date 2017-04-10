@@ -1,2 +1,1 @@
-
-<%= @page.meta['og:image:width']  %>
+<% if @page.images.any? %><%= @page.images.with_size.to_json %><% end %>
