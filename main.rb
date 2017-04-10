@@ -18,6 +18,10 @@ helpers do
     images.map { |image| image }.join
   end
 
+  def paint_images_sizes(images)
+    images.map { |width| image }.join
+  end
+  
   def links_to_li(links)
     links.map { |link| "<li><a href='#{link}'>#{link}</a></li>" }.join("\n")
   end
