@@ -1,7 +1,2 @@
-<% if @page.images.owner_suggested %>
-  <%= @page.images.owner_suggested.with_size.to_json %> ----
-<% else %>
-  <% if @page.images.any? %>
-    <%= @page.images.with_size.to_json %>
-  <% end %>
-<% end %>
+
+<%= @page.meta['og:image:width']  %>
