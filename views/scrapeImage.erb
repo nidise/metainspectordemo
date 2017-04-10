@@ -1,3 +1,13 @@
 <% if @page.images.any? %>
-    <%= paint_images [@page.images] %>
+     <% if @page.images.owner_suggested %>
+        <h4>Suggested by owner (OG / Twitter tags)</h4>
+        <%= paint_images [@page.images.owner_suggested] %>
+        <hr />
+      <% end %>
+
+      <% if @page.images.largest %>
+        <h4>Largest image</h4>
+        <%= paint_images [@page.images.largest] %>
+        <hr />
+      <% end %>
 <% end %>
