@@ -1,4 +1,4 @@
 <% if @page.images.any? %><%= @page.images.with_size.to_json %><% end %>
-<%= @page.meta_tags['property'] %>
+<%= @page.meta_tags.to_json %>
 
 
